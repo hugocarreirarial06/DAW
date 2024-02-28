@@ -1,43 +1,81 @@
-<!DOCTYPE html>
 
 <html>
 <head>
-    <title>ABR-Rial - Abogados</title>
+    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/envioDatos.css">
+    <link rel="stylesheet" href="./css/temas.css">
+    <link rel="stylesheet" href="./css/cabeceras.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/justificado.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="css/js/bootstrap.js"></script>
 </head>
-
-<header >
-    <div class="titulo">
-        <h1>ABRial-Abogados</h1>
-        <img src="imagenes/logtipo.png" alt="logo" width="56" height="40">
-    </div>
-    <div class="navegar">
-        <nav>
-            <ul>
-                <a href="index.html">HOME</a>
-                <a href="temas.html">TEMAS</a>
-                <a href="nosotros.html">NOSOTROS</a>
-                <a href="iniciosesion.html">ACCEDER</a>
-                <a href="contacto.html">CONTACTO</a>
-                <a href="asistencia.html">ASISTENCIA</a>
-                <a href="proba.html">PROBA</a>
-            </ul>
-        </nav>
-    </div>
-</header>
-
 <body>
 
-    <div class="caja container">
-        <div class="error" >
-            <img src="imagenes/imagen.png" alt="imagen" width="300" height="60">
+    <header>
+        <div class="titulo bg-image">
+          <h1>ABRial-Abogados</h1>
+          <img src="imagenes/logtipo.png" alt="logo" width="56" height="40">
         </div>
-        <div class="mensaje">
-            <h1>El formulario se está enviando...</h1>
-        </div> 
-    </div>
+        <div class="navegar">
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html">HOME</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  TEMAS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="administrativo.html">Administrativo</a></li>
+                  <li><a class="dropdown-item" href="familia.html">Familiar</a></li>
+                  <li><a class="dropdown-item" href="bancario.html">Bancario</a></li>
+                  <li><a class="dropdown-item" href="mercantil.html">Mercantil</a></li>
+                </ul>
+              </li>
+              <li><a href="nosotros.html">NOSOTROS</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACCEDER
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="iniciosesion.html">Iniciar Sesión</a></li>
+                  <li><a class="dropdown-item" href="registrarse.html">Registrarse</a></li>
+                </ul>
+              </li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+              <li><a href="asistencia.html">ASISTENCIA</a></li>
+              <li><a href="proba.html">PROBA</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <body>
+
+        <div class="caja container">
+            <div class="error" >
+                <img src="imagenes/imagen.png" alt="imagen" width="300" height="60">
+            </div>
+            <div class="mensaje">
+                <h1>El formulario se está enviando...</h1>
+            </div> 
+        </div>
+    
+    </body>
+
+<style>
+    .container{
+        line-height: 2em;
+        padding: 15px;
+    }
+</style>
+   
 </body>
 
 <footer>
@@ -49,18 +87,12 @@
             <p> aberiuris@aberiuris.com</p>
         </div>
         <div>Donde estamos
-            <p> 
-                <a href="opino.html">O Pino</a>
-            </p>
-            <p> 
-                <a href="santiago.html">Santiago de Compostela</a>
-            </p>
+            <p> O Pino</p>
+            <p> Santiago de Compostela</p>
         </div>
-        <div> 
-            <a href="privacidad.html">Politicas de privacidad</a>
-        </div> 
+        <div> Politica de privavidad </div> 
     </div>
 </footer>
 
-
 </html> 
+
