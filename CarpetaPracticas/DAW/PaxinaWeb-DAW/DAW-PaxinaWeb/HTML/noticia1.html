@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura de Archivo de Texto</title>
+</head>
+<body>
+    <div id="content"></div>
+
+
+    <script>
+        window.onload = function() {
+            loadFile('noticia1.txt'); // Cargar automáticamente el archivo "noticia.txt" al cargar la página
+        };
+    
+        function loadFile(filename) {
+            fetch(filename)
+                .then(response => response.text())
+                .then(text => displayText(text))
+                .catch(error => console.error('Error al cargar el archivo:', error));
+        }
+    
+        function displayText(text) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.textContent = text;
+        }
+    </script>
+    
+    
+</body>
+</html>

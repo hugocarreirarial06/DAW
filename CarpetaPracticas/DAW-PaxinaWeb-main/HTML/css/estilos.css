@@ -1,0 +1,18 @@
+
+.background {
+    background-image: url('/imagenes/reuniones.jpg'); /* Cambia 'imagen-de-fondo.jpg' por la ruta de tu imagen de fondo */
+    background-size: 100vw 100vh;
+    background-position: center;
+    height: 100vh;
+    color: white; /* Color del texto en el fondo */
+    text-align: center;
+    padding: 50px;
+}
+
+.content {
+    display: none; /* Oculta inicialmente el contenido adicional */
+}
+
+h3 {
+    font-family: 'Xunta Sans';
+}

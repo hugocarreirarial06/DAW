@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/temas.css">
+    <link rel="stylesheet" href="../css/cabeceras.css">
+    <script src="../css/js/bootstrap.js"></script>
+</head>
+<body>
+  <header >
+    <div class="titulo bg-image">
+        <h1>ABRial-Abogados</h1>
+        <img src="../imagenes/logtipo.png" alt="logo" width="56" height="40">
+    </div>
+    <div class="navegar">
+      <nav>
+        <ul>
+            <li>
+                <a href="../index.html">HOME</a>
+            </li>
+            <li><a href="../temas.html">TEMAS</a></li>
+            <li><a href="../temas.html">TEMAS</a> </li>
+            <li><a href="../nosotros.html">NOSOTROS</a> </li>
+            <li><a href="../iniciosesion.html">ACCEDER</a> </li>
+            <li><a href="../contacto.html">CONTACTO</a> </li>
+            <li><a href="../asistencia.html">ASISTENCIA</a> </li>
+            <li><a href="../proba.html">PROBA</a> </li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<div class="fondoInicio negro bg-image">
+    <p class="text">Los jueces acorralan a la banca por usura y falta de transparencia en las ‘revolving’</p>
+</div>
+
+<div class="container">
+    <img class="espacio col-md-6" src="../imagenes/logo-cinco-dias.svg" height="80px" width="80px">
+    <div>
+        <p id="textonoticia"></p>
+    </div>
+
+    <div>
+        
+    </div>
+
+    </div>
+</div>
+
+
+
+<style>
+    .preguntas{
+        display:block;
+    }
+
+    .accordion-item{
+        width: 100%;
+    }
+
+    .espacio{
+        padding: 20px;
+    }
+
+    .respuestas ul li{
+        list-style-type: square;
+        display: flex;
+    }
+
+    .respuestas{
+        display: flex;
+        padding: 20px;
+    }
+
+    .accordion-body{
+        padding: 20px;
+    }
+   
+    .texto{
+        text-align: justify;
+        line-height: 2.0rem;
+    }
+    .fondoInicio{
+        background-image: url("../imagenes/fondo.png");
+        padding: 20px;
+        margin: 10px;
+    }
+    .negro p{
+        color: black;
+    }
+    .navegar{
+        height: 50px;
+    }
+
+    .question{
+        height: 50px;;
+        background-color: #6dc1b0;
+        color: #fff;
+        padding-left: 2rem;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        gap: 1rem;
+        text-align: center;
+        text-justify:distribute-all-lines;
+    }
+    
+    .answer{
+        line-height: 2.5em;
+    }
+
+    .expertos{
+        padding: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px 200px;
+        grid-gap:15px
+    }
+
+    .avogado1{
+        grid-column: 1;
+        grid-row: 1;
+        border-radius: 10px;
+        background-color: aqua;
+        padding: 10px;
+
+    }
+
+    .avogado2{
+        grid-column: 1;
+        grid-row: 2;
+        border-radius: 10px;
+        background-color: aqua;
+        padding: 10px;
+    }
+
+    .avogado3{
+        grid-column: 1;
+        grid-row: 3;
+        border-radius: 10px;
+        background-color: aqua;
+        padding: 10px;
+
+    }
+
+    .informacion{
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .informacionProfesional{
+        display: grid;
+        padding: 10px;
+        grid-gap: 10px;
+        grid-template-columns: 2;
+        word-wrap: break-word;
+    }
+
+    .informacionProfesional p{
+        word-wrap: break-word;
+    }
+
+    .fuente{
+        display: grid;
+        padding-left: 25px;
+        padding-right: 25px;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+    }
+
+    .fuente p{
+        margin: 20px;
+    }
+
+    #textonoticia{
+        column-count: 3;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .imagen img{
+        grid-column: 1;
+    }
+
+    .texto p{
+        grid-column: 2;
+    }
+
+    .text{
+        font-family: "serif";
+        font-size: 2rem;
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    window.onload = function() {
+        loadFile('../n3.txt'); // Cargar automáticamente el archivo "noticia.txt" al cargar la página
+    };
+
+    function loadFile(filename) {
+        fetch(filename)
+            .then(response => response.text())
+            .then(text => displayText(text))
+            .catch(error => console.error('Error al cargar el archivo:', error));
+    }
+
+    function displayText(text) {
+        const contentDiv = document.getElementById('textonoticia');
+        contentDiv.innerHTML = text;
+    }
+</script>
+
+<script src="script.js"></script>
+   
+</body>
+
+<footer>
+    <div class="contacto">
+        <div class="empresa">© 2021 ABR-Rial - Abogados
+        </div>
+        <div>Contacta con nosotros
+            <p> 981 123 456</p>
+            <p> aberiuris@aberiuris.com</p>
+        </div>
+        <div>Donde estamos
+            <p> O Pino</p>
+            <p> Santiago de Compostela</p>
+        </div>
+        <div> Politica de privavidad </div> 
+    </div>
+</footer>
+
+</html> 

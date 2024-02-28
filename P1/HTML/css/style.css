@@ -1,0 +1,42 @@
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 150px;
+  height: 200px;
+}
+
+.rectangle {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    left: 50px;
+    width: 50%;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-color: blue;
+    border-style: solid;
+}
+
+.p .p1 {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    width: 50%;
+    height: 50px;
+}
+
+.p .p2 {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 50%;
+    height: 50px;
+}
+
+.imagen {
+    
+}

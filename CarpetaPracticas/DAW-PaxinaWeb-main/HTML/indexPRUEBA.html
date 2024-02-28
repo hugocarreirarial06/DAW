@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ABR-Rial - Abogados</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/cabeceras.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <style>
+        /* Estilos para la caja */
+
+        .header{
+            margin: 0;
+            padding: 0;
+        }
+        .imagenCorp {
+            max-width: 1000px; /* Máximo ancho de la imagen */
+            max-height: 190px; /* Máxima altura de la imagen */
+            width: 100%; /* Ancho de la imagen igual al ancho del contenedor */
+            height: auto; /* Altura de la imagen ajustada automáticamente */
+        }
+
+        .my-box {
+            width: 100vw; /* Ancho igual al ancho de la ventana */
+            height: 100vh; /* Alto igual al alto de la ventana */
+            background-color: #f0f0f0; /* Color de fondo (puedes cambiarlo) */
+            background-image: url(imagenes/reuniones.jpg);
+            background-size: cover;
+            display: block;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+        }
+
+        .my-box h1{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size:30px;
+        }
+
+        .elemento {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #deslizador {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: none;
+            border: none;
+        }
+
+        .imagenCorp img {
+            width: 100%; /* Ancho de la imagen igual al ancho del contenedor */
+            height: auto; /* Altura de la imagen ajustada automáticamente */
+        }
+    </style>
+
+    <div class="my-box">
+        <h1>ABRial-Abogados</h1>
+        <img class="elemento imagenCorp" src="imagenes/imagen.png" alt="logo" width="1000px" height="190px">
+        <button id="deslizador">
+            <img src="imagenes/scroll.png" alt="logo" width="100px" height="100px">
+        </button>
+    </div>
+
+    <script>
+        // Función para manejar el clic en el botón
+        function buttonClicked() {
+            // Obtiene la altura de la ventana del navegador
+            var windowHeight = window.innerHeight;
+
+            // Desplaza la página hacia abajo
+            window.scrollBy({
+                top: windowHeight, // Desplazamiento hacia abajo por la altura de la ventana
+                behavior:"smooth" // Desplazamiento suave
+            });
+        }
+
+        // Agrega un evento de clic al botón
+        document.getElementById('deslizador').addEventListener('click', buttonClicked);
+    </script>
+
+    <div class="caja container">
+        <div class="column entrada">
+        AB-Rial - Abogados de Compostela nace del deseo de xxxxxxxxxxxxxx xxxxxxxxxxx, que contaban con una larga trayectoria 
+        profesional en el área del Derecho del Trabajo y 
+        Seguridad Social, de ofrecer a sus clientes respuesta a todas sus necesidades jurídicas; para lo que aúnan 
+        su experiencia con la de otros profesionales con experiencia acreditada en 
+        otras áreas del derecho, manteniendo la misma filosofía de atención personalizada, cercana y responsable. 
+        Es así, que en el año 1995 inicia su andadura.
+        Esto nos permite poder ofrecer a nuestros clientes un servicio de asesoramiento integral, lo que ha convertido 
+        a Ágora Abogados de Compostela en un referente dentro de las distintas 
+        firmas de servicios jurídicos y asesoramiento de Galicia.
+        La larga experiencia, especialización, innovación y constante formación es lo que convierte a nuestros abogados en 
+        profesionales de referencia en nuestro sector. 
+        </div>
+            <div class="column">
+                <img src="imagenes/imagen1.png" alt="imagen" width="360" height="450">
+            </div>
+            <div class="column">
+                <img class="foto" src="imagenes/imagen.png" alt="imagen" width="300" height="300"> 
+            </div>
+        </div>
+    </div>
+
+
+    <div class="caja container">
+        <h1> Nuestros lugares </h1>
+        <figure>
+            <img src="imagenes/imagen1.png" alt="imagen" width="300" height="500">
+            <img src="imagenes/imagen2.png" alt="imagen" width="300" height="500">
+            <img src="imagenes/imagen3.png" alt="imagen" width="300" height="500">
+        </figure> 
+    </div>
+
+    <div class="caja">
+        <h1>Opiniones de nuestros clientes</h1>
+        <div class="container">
+            <div class="opinion">
+                <p class="clase">Gran profesional no se rindió ante nuestro caso que si lo hubiéramos hechos solos sería complicado,
+                    gracias a él hoy tengo mi NIE totalmente agradecida por el compromiso la predisposición y la paciencia. 
+                </p>
+                <div class="container">
+                    <img class="persona" src="imagenes/rial.png" alt="imagen" width="100" height="100">
+                    <p class="nombre">
+                        Eugenia Ramos
+                    </p>
+                </div>
+            </div>
+            <div class="opinion">
+                <p class="clase">Excelente abogado de extranjería. Sin duda, volvería a contratarlo y a 
+                    recomendarlo a cualquier persona que tenga un caso complicado. </p>
+                    <div class="container">
+                        <img class="persona" src="imagenes/rial.png" alt="imagen" width="100" height="100">
+                        <p class="nombre">
+                            Eugenia Ramos
+                        </p>
+                    </div>
+            </div>
+            <div class="opinion">
+                <p class="clase">Excelente predisposición y atención, gran efectividad a la hora de ofrecer soluciones ante cualquier cuestión.</p>
+                <div class="container">
+                    <img class="persona" src="imagenes/rial.png" alt="imagen" width="100" height="100">
+                    <p class="nombre">
+                        Eugenia Ramos
+                    </p>
+                </div>
+            </div>
+            <div class="opinion">
+                <p class="clase">
+                    Gestionó una solicitud de extranjería para mí. El proceso fue muy transparente, y toda la comunicación fue muy puntual. Agradezco su alto nivel de profesionalismo y contaré con él en el caso de futuros asuntos jurídicos
+                    <div class="container">
+                        <img class="persona" src="imagenes/rial.png" alt="imagen" width="100" height="100">
+                        <p class="nombre">
+                            Eugenia Ramos
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="caja colorCorporativo">
+        <h1 class="blanco">Ultimas noticias judiciales</h1>
+        <div class="container">
+            <div class="opinion">
+                <div class="container">
+                    <img src="imagenes/lavoz.png" alt="imagen" width="200" height="35">
+                </div>
+                <p class="clase">Ignacio Doce: «La declaración de nulidad [de una cláusula abusiva] no prescribe nunca»
+                </p>
+                <div class="container">
+                    <img class="persona" src="imagenes/rial.png" alt="imagen" width="100" height="100">
+                    <p class="nombre">
+                        Eugenia Ramos
+                    </p>
+                </div>
+            </div>
+            <div class="opinion">
+                <div class="container">
+                    <img src="imagenes/abc.png" alt="imagen" width="100" height="30">
+                </div>
+                <p class="clase">Excelente abogado de extranjería. Sin duda, volvería a contratarlo y a 
+                    recomendarlo a cualquier persona que tenga un caso complicado. </p>
+                    <div class="container">
+                        <img class="persona" src="imagenes/rial.png" alt="imagen" width="100" height="100">
+                        <p class="nombre">
+                            Eugenia Ramos
+                        </p>
+                    </div>
+            </div>
+            <div class="opinion">
+                <div class="container">
+                    <img src="imagenes/elpais.png" alt="imagen" width="150" height="30">
+                </div>
+                <p class="clase">Excelente predisposición y atención, gran efectividad a la hora de ofrecer soluciones ante cualquier cuestión.</p>
+                <div class="container">
+                    <img class="persona" src="imagenes/rial.png" alt="imagen" width="100" height="100">
+                    <p class="nombre">
+                        Eugenia Ramos
+                    </p>
+                </div>
+            </div>
+            <div class="opinion">
+                <div class="container">
+                    <img src="imagenes/elcorreo.png" alt="imagen" width="200" height="35">
+                </div>
+                <p class="clase">
+                    Gestionó una solicitud de extranjería para mí. El proceso fue muy transparente, y toda la comunicación fue muy puntual. Agradezco su alto nivel de profesionalismo y contaré con él en el caso de futuros asuntos jurídicos
+                    <div class="container">
+                        <img class="persona" src="imagenes/rial.png" alt="imagen" width="100" height="100">
+                        <p class="nombre">
+                            Eugenia Ramos
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="contacto">
+        <div class="empresa">© 2021 ABR-Rial - Abogados
+        </div>
+        <div>Contacta con nosotros
+            <p> 981 123 456</p>
+            <p> aberiuris@aberiuris.com</p>
+        </div>
+        <div>Donde estamos
+            <p> 
+                <a href="opino.html">O Pino</a>
+            </p>
+            <p> 
+                <a href="santiago.html">Santiago de Compostela</a>
+            </p>
+        </div>
+        <div> 
+            <a href="privacidad.html">Politicas de privacidad</a>
+        </div> 
+    </div>
+</footer>
+
+
+</html> 

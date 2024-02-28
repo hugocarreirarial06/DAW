@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(/imagenes/reuniones.jpg);
+            background-image: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .caja {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 30px;
+        }
+
+        .login-container {
+            width: 400px;
+            height: 280px;
+            margin: 100px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .login-container h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 95%;
+            height: 20px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #2731b7;
+        }
+
+        h2{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+        }
+        label{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 19px; 
+        }
+        button{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="boton-imagen caja" onclick="alert('Se está cerrando la sesión')">
+        <img src="imagenes/atras.png" alt="Imagen del botón" width="50" height="50">
+    </a>
+    <div class="login-container logo">
+        <h2>Iniciar Sesión</h2>
+        <img src="imagenes/imagen.png" alt="logo" width="200" height="100">
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Iniciar Sesión</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

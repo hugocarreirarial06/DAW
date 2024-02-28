@@ -1,0 +1,12 @@
+.more-info{
+    font-size: 15px;
+    font-family: 'Xunta Sans';
+    height: 35px;
+    text-align: center;
+}
+
+.more-info:hover{
+    background-color: #6f4fda;
+    color: white;
+    cursor: pointer;
+}
