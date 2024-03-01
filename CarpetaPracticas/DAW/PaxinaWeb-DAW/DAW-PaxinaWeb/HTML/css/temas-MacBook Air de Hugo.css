@@ -1,0 +1,44 @@
+.cabeceraTitulo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    align-items: center;
+    background-image: url(/imagenes/fondo.png);
+  }
+  
+  .text {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Xunta Sans';
+    padding: 30px;
+    padding-bottom: 10px;
+  }
+
+  .leyenda{
+    position: relative;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Xunta Sans'; 
+    padding: 30px;
+    padding-top: 10px;
+    line-height: 30px;
+
+}
+
+.cabeceraTitulo .contenedor{
+    display: block;
+    align-items: center;
+}
+
+.container {
+  display: flex;
+  font-family: 'Xunta Sans';
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
