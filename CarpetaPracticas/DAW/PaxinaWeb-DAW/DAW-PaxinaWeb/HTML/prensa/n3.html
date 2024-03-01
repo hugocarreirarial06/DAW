@@ -66,44 +66,160 @@
     <p id="textonoticia"></p>
 </div>
 
-<div class="noticias-container">
-    <div class="noticias">
-      <div class="noticia">Noticia 1</div>
-      <div class="noticia">Noticia 2</div>
-      <div class="noticia">Noticia 3</div>
-      <div class="noticia">Noticia 4</div>
-      <div class="noticia">Noticia 5</div>
-      <div class="noticia">Noticia 6</div>
-      <div class="noticia">Noticia 7</div>
 
+
+<h1> Otras noticias relevantes</h1>
+
+<div class="noticias-contenedor">
+    <div class="flechas-container">
+        <img id ="izquierda" src="/HTML/imagenes/scroll-izq.png">
+        <img id ="derecha" src="/HTML/imagenes/scroll-drcha.png">
     </div>
-  </div>
-  
-  <button id="izquierda">←</button>
-  <button id="derecha">→</button>
-  
-
-<button id="boton">Mostrar noticias</button>
+    <div class="noticias">
+      <div class="noticia">
+        <div class="disposicionNoticia">
+            <img src="/HTML/imagenes/abc.png">
+            <h2 id="buenas"> Europa amplía el plazo para reclamar los gastos de la hipoteca: ¿qué tiene que saber el consumidor?</h2> 
+        </div>       
+      </div>
+      <div class="noticia">
+        <div class="disposicionNoticia">
+            <img src="/HTML/imagenes/abc.png">
+            <h2> Europa amplía el plazo para reclamar los gastos de la hipoteca: ¿qué tiene que saber el consumidor?</h2> 
+        </div> 
+      </div>
+      <div class="noticia">
+        <div class="disposicionNoticia">
+            <img src="/HTML/imagenes/abc.png">
+            <h2> Europa amplía el plazo para reclamar los gastos de la hipoteca: ¿qué tiene que saber el consumidor?</h2> 
+        </div> 
+      </div>
+      <div class="noticia">
+        <div class="disposicionNoticia">
+            <img src="/HTML/imagenes/abc.png">
+            <h2> Europa amplía el plazo para reclamar los gastos de la hipoteca: ¿qué tiene que saber el consumidor?</h2> 
+        </div> 
+      </div>
+      <div class="noticia">
+        <div class="disposicionNoticia">
+            <img id="logoNoticiaX" src="/HTML/imagenes/abc.png">
+            <h2 id="resumenNoticia"> Europa amplía el plazo para reclamar los gastos de la hipoteca: ¿qué tiene que saber el consumidor?</h2> 
+        </div> 
+      </div>
+      <div class="noticia">
+        <div class="disposicionNoticia">
+            <img id="logoNoticiaX" src="/HTML/imagenes/abc.png">
+            <h2 id="resumenNoticia"> Europa amplía el plazo para reclamar los gastos de la hipoteca: ¿qué tiene que saber el consumidor?</h2> 
+        </div> 
+      </div>
+      <div class="noticia">
+        <div class="disposicionNoticia">
+            <img src="/HTML/imagenes/abc.png">
+            <h2> Europa amplía el plazo para reclamar los gastos de la hipoteca: ¿qué tiene que saber el consumidor?</h2> 
+            <button id="botonNoticias">Acceso a la noticia</button>
+        </div> 
+      </div>
+    </div>
+</div>
 
 <style>
-    .noticias-container {
+    .cajaNoticias{
+        background-color: #142284;
+        display: flex;
+        padding: 20px;
+    }
+
+    .cajaNoticia{
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+    }
+
+</style>
+
+
+
+<style>
+
+    #botonNoticias{
+        background-color: #142284;
+        color: #fff;
+        border-radius: 5px;
+        border-color:#080f46;
+    }
+
+    .noticia .disposicionNoticia img{
+        padding: 20px;
+        width: 20%;
+        align-items: center;
+    }
+
+    .disposicionNoticia{
+        padding: 20px;
+    }
+
+    .disposicionNoticia h2{
+        padding: 20px;
+    }
+
+    .noticias-contenedor {
+        display: flex;
         overflow: hidden;
-        white-space: nowrap;
+        background-color: #142284;
+        justify-content: center;
+        position: relative;
+    }
+
+    .noticias-container h1{
+        color: #fff;
+        font-size: 35px;
+        margin-top: 30px;
+        text-align: center;
     }
       
     .noticias {
-        display: inline-block;
+        display: flex;
         transition: transform 0.5s ease;
+        padding: 40px;
     }
       
     .noticia {
-        display: inline-block;
-        width: 200px;
+        width: 400px;
+        height: 400px;
+        border-radius: 15px;
+        background-color: white;
+        border-color: #080f46;
+        border-radius: 20px;
         margin-right: 10px;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
+    }  
+
+    .flechas-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1; /* Asegura que las flechas estén por encima de las noticias */
     }
-      
+
+    .flechas-container #derecha{
+        width: 10%;
+        height: 10%;
+    }
+
+    .flechas-container #izquierda{
+        width: 10%;
+        height: 10%;
+    }
+
+    #derecha:hover{
+        -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(255, 255, 255, 0.4));
+        box-reflect: below 10px linear-gradient(transparent, rgba(255, 255, 255, 0.4));
+    }
+
+    #izquierda:hover{
+        -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(255, 255, 255, 0.4));
+        box-reflect: below 10px linear-gradient(transparent, rgba(255, 255, 255, 0.4));
+    }
+
 </style>
 
 <script>
@@ -289,7 +405,7 @@
             column-count: 3;
         }
     }
-</>
+</style>
 
 <script>
     window.onload = function() {

@@ -62,7 +62,7 @@
 </div>
 
 <div class="container">
-    <img class="espacio col-md-6" src="../imagenes/logo-cinco-dias.svg" height="80px" width="80px">
+    <img class="logoPrensa" src="../imagenes/elcorreo.png">
     <div>
         <p id="textonoticia"></p>
     </div>
@@ -77,6 +77,12 @@
 
 
 <style>
+
+    .logoPrensa{
+        width: 30%;
+        height: 60%;
+    }
+
     .preguntas{
         display:block;
     }
@@ -199,9 +205,9 @@
     }
 
     #textonoticia{
-        column-count: 3;
         text-align: justify;
         padding: 20px;
+        line-height: 2.5em;
     }
 
     .imagen img{
@@ -221,7 +227,7 @@
 
 <script>
     window.onload = function() {
-        loadFile('../noticia1.txt'); // Cargar automáticamente el archivo "noticia.txt" al cargar la página
+        loadFile('../n5.txt'); // Cargar automáticamente el archivo "noticia.txt" al cargar la página
     };
 
     function loadFile(filename) {
@@ -233,7 +239,7 @@
 
     function displayText(text) {
         const contentDiv = document.getElementById('textonoticia');
-        contentDiv.textContent = text;
+        contentDiv.innerHTML = text;
     }
 </script>
 
